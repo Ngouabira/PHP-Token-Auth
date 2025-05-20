@@ -1,0 +1,13 @@
+{
+    "name": "valdy/projet_ecpi",
+    "description": "Petit projet ecpi",
+    "authors": [
+        {
+            "name": "Valdy NGOUABIRA",
+            "email": "valdyngouabira@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    }
+}

@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^home$ index.php
+RewriteRule ^default$ index.php
+RewriteRule ^accueil$ index.php
+
+RewriteRule ^login$ ./auth/login.php
+RewriteRule ^register$ ./auth/register.php
+RewriteRule ^forgot-password$ ./auth/forgot-password.php
+RewriteRule ^reset-password$ ./auth/reset-password.php
+
+RewriteRule ^logout$ ./feature/logout.php
