@@ -25,6 +25,8 @@ if (isset($_POST['login'])) {
             setcookie('token', $token, time() + 3600 * 24 * 30, '/');
         }
         $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['email'] = $user['email'];
         header("Location: /");
         exit();
     } else {

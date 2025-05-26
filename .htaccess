@@ -10,3 +10,14 @@ RewriteRule ^forgot-password$ ./auth/forgot-password.php
 RewriteRule ^reset-password$ ./auth/reset-password.php
 
 RewriteRule ^logout$ ./feature/logout.php
+
+
+RewriteRule ^income$ ./pages/income/index.php
+RewriteRule ^income/create$ ./pages/income/create.php
+RewriteRule ^income/edit-([0-9]+)$ ./pages/income/edit.php?id=$1
+RewriteRule ^income/delete/([0-9]+)$ ./pages/income/delete.php?id=$1
+
+RewriteRule ^expense$ ./pages/expense/index.php
+RewriteRule ^expense/create$ ./pages/expense/create.php
+RewriteRule ^expense/edit-([0-9]+)$ ./pages/expense/edit.php?id=$1
+RewriteRule ^expense/delete/([0-9]+)$ ./pages/expense/delete.php?id=$1
