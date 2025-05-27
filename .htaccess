@@ -3,6 +3,7 @@ RewriteEngine on
 RewriteRule ^home$ index.php
 RewriteRule ^default$ index.php
 RewriteRule ^accueil$ index.php
+RewriteRule ^dashboard$ index.php
 
 RewriteRule ^login$ ./auth/login.php
 RewriteRule ^register$ ./auth/register.php
@@ -21,3 +22,9 @@ RewriteRule ^expense$ ./pages/expense/index.php
 RewriteRule ^expense/create$ ./pages/expense/create.php
 RewriteRule ^expense/edit-([0-9]+)$ ./pages/expense/edit.php?id=$1
 RewriteRule ^expense/delete/([0-9]+)$ ./pages/expense/delete.php?id=$1
+
+
+RewriteRule ^account$ ./pages/account/profile.php
+RewriteRule ^profile$ ./pages/account/profile.php
+
+

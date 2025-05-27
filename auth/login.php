@@ -27,6 +27,7 @@ if (isset($_POST['login'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         $_SESSION['email'] = $user['email'];
+        $_SESSION['user_picture'] = $user['picture'];
         header("Location: /");
         exit();
     } else {

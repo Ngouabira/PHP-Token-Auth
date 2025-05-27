@@ -48,7 +48,7 @@
     <ul class="menu-inner py-1 ps ps--active-y">
         <!-- Dashboard -->
         <li class="menu-item active">
-            <a href="index.html" class="menu-link">
+            <a href="/dashboard" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Tableau de bord</div>
             </a>

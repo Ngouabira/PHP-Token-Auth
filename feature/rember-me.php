@@ -14,6 +14,8 @@ if (isset($_COOKIE['token'])) {
         if ($auth_token['created_at'] + 3600 > time()) {
             if (!isset($_SESSION['user_id'])) {
                 $_SESSION['user_id'] = $auth_token['user_id'];
+                $_SESSION['username'] = $auth_token['username'];
+                $_SESSION['email'] = $auth_token['email'];
             }
         }
     }
